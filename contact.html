@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="header-wrapper background-dark">
+        <header class="wrapper center remove-last-margin">
+            <a href="index.html"><img class="footer-logo" src="https://unicorn-space-tours.netlify.app/img/logo.svg"
+                    alt="UST logo"></a>
+            <h1>Contact Us</h1>
+            <p class="lead center max-line-length">
+                I will personally get in touch with you!
+            </p>
+        </header>
+    </div>
+    <main>
+        <section class="wrapper center margin-v-lg">
+            <form id="form" action="/success" class="center max-line-length" method="POST" name="book-tour"><input
+                    type="hidden" name="form-name" value="book-tour">
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="form-field">
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Aadil Khan">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="khanmdadil34@gmail.com">
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Share your thought"></textarea>
+                </div>
+                <div onclick="sendContact()" class="button">
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
